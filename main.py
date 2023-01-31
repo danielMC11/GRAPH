@@ -33,6 +33,7 @@ for edge in g.edges(data=True):
 #print(edge_distance)
 print('# of edges: {}'.format(g.number_of_edges()))
 print('# of nodes: {}'.format(g.number_of_nodes()))
+print(nx.shortest_path(g,source="A",target="J2",weight="distance"))
 
 
 """
@@ -59,8 +60,8 @@ print(BtoD)
 """
 
 plt.title('Graph Representation of NIGGA', size=15)
-nx.draw(g, pos=node_positions, edge_color="red", node_size=10, node_color='black', with_labels=False)
-nx.draw_networkx_labels(g,pos=node_positions,labels=labels_dict,horizontalalignment="left",verticalalignment="top",font_size=10,font_color="black")
+nx.draw(g, pos=node_positions, edge_color="red", node_size=10, node_color='black', with_labels=True)
+#nx.draw_networkx_labels(g,pos=node_positions,labels=labels_dict,horizontalalignment="left",verticalalignment="top",font_size=10,font_color="black")
 plt.show()
 
 
