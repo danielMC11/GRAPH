@@ -60,7 +60,7 @@ print(BtoD)
 
 plt.title('Graph Representation of NIGGA', size=15)
 nx.draw(g, pos=node_positions, edge_color="red", node_size=10, node_color='black', with_labels=False)
-nx.draw_networkx_labels(g,pos=node_positions,labels=labels_dict,horizontalalignment="left",verticalalignment="top",font_size=10)
+nx.draw_networkx_labels(g,pos=node_positions,labels=labels_dict,horizontalalignment="left",verticalalignment="top",font_size=10,font_color="black")
 plt.show()
 
 
